@@ -1,4 +1,4 @@
-abstract class Routes {
-  static const home = '/';
-  static const details = '/details';
+abstract class AppRoutes {
+  static const HOME = '/';
+  static const DETAILS = '/details';
 }
