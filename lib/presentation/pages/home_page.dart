@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:github_flutter_repo_explorer/presentation/controllers/repo_controller.dart';
+import 'package:github_flutter_repo_explorer/presentation/controllers/theme_controller.dart';
 import 'package:github_flutter_repo_explorer/presentation/pages/details_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,7 +13,13 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Flutter Repositories'),
         actions: [
-          IconButton(icon: Icon(Icons.sort), onPressed: controller.toggleSort)
+          IconButton(icon: Icon(Icons.sort), onPressed: controller.toggleSort),
+          IconButton(
+            icon: Icon(Icons.dark_mode),
+            onPressed: () {
+              Get.find<ThemeController>().toggleTheme();
+            },
+          ),
         ],
       ),
       body: Obx(() {
