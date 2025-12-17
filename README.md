@@ -1,16 +1,38 @@
-# github_flutter_repo_explorer
+Flutter GitHub Repository Explorer
 
-A new Flutter project.
+A lightweight Flutter application that searches GitHub for repositories using the keyword "Flutter" and displays the top 50 most starred repositories with offline support.
 
-## Getting Started
+Overview
 
-This project is a starting point for a Flutter application.
+This app demonstrates clean Flutter architecture, offline-first data handling, and modern state management. It fetches data from the GitHub Search API, caches it locally, and provides sorting and detailed views.
 
-A few resources to get you started if this is your first Flutter project:
+Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+⭐ Display Top 50 repositories by star count
+
+🔄 Sort repositories by:
+
+Star count
+
+Last updated date-time
+
+💾 Offline support (data available after app restart)
+
+🖼 Cached images for offline viewing
+
+🌙 Light / Dark theme support
+
+📱 Responsive UI (mobile & tablet)
+
+Tech Stack
+
+Flutter
+
+GetX – state management, routing, dependency injection
+
+Hive – local data persistence
+
+HTTP – API communication
+
+cached_network_image – image caching
